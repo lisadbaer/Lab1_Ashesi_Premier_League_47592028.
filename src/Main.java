@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class FootballPlayers {
+public class Main {
     public static void main(String[] args) {
 
         Scanner input=new Scanner(System.in);
@@ -26,7 +26,7 @@ public class FootballPlayers {
         float weightkg = pound * weight;
         int roundweight = (int) weightkg;
 
-        float heightcm = meter * height;
+        float heightcm = height * meter;
         int roundheight = (int) heightcm;
 
 
@@ -113,8 +113,7 @@ public class FootballPlayers {
                         "Position:"+ Pposition +"\n"  +
                         "Eligibility: "+ eligibility +"\n"  +
                         "Lineup Decision: "+ lineUp +"\n"  +
-                        "Final Decision: "+ status +"\n"  +
-
+                        "Final Decision: "+ status +"\n"
                 );
 
     }}
